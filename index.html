@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/stylesheet.css">
+<title>To Do</title>
+</head>
+
+<body>
+<header>
+	<div id="title">
+		<h1>TODO</h1>
+		<button id="changeBg-bt"></button>
+	</div>
+	<form>
+		<div id="newTodo" class="whiteContainer single-cont">
+			<button class="state-bt unFinished-bt"></button>
+			<input id="createTodo" type="text" placeholder="Create a new todo...">
+		</div>
+	</form>
+</header>
+<main>
+	<div id="main-container">
+		<section id="todoList">
+			<article id="tarea01" class="whiteContainer task">
+				<button class="state-bt finished-bt"></button>
+				<p class="todoText completed">Complete online JavaScript course</p>
+				<button class="delete-bt"></button>
+			</article>
+			<article id="tarea02" class="whiteContainer task">
+				<button class="state-bt unFinished-bt"></button>
+				<p class="todoText unCompleted">10 minutes meditation</p>
+				<button class="delete-bt"></button>
+			</article>
+			<article id="tarea03" class="whiteContainer task">
+				<button class="state-bt unFinished-bt"></button>
+				<p class="todoText unCompleted">Read for 1 hour</p>
+				<button class="delete-bt"></button>
+			</article>
+			<article id="tarea04" class="whiteContainer task">
+				<button class="state-bt unFinished-bt"></button>
+				<p class="todoText unCompleted">Pick up groceries</p>
+				<button class="delete-bt"></button>
+			</article>
+			<article id="tarea05" class="whiteContainer task">
+				<button class="state-bt unFinished-bt"></button>
+				<p class="todoText unCompleted">Complete Todo App on Frontend Mentor</p>
+				<button class="delete-bt"></button>
+			</article>
+			<div id="info-bar" class="whiteContainer">
+				<p id="info" name="info">5 items left</p>
+				<button class="clear-bt">Clear Completed</button>
+			</div>
+		</section>
+		<menu class="whiteContainer single-cont">
+			<button class="bt-select">All</button>
+			<button class="bt-select">Active</button>
+			<button class="bt-select">Completed</button>
+		</menu>
+		<p class="bottom-text">Drag and drop to reorder list</p>
+	</div>
+</main>
+</body>
+</html>

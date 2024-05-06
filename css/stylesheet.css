@@ -1,0 +1,178 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Josefin Regular';
+	src: url("../fonts/JosefinSans-Regular.woff")format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Josefin Bold';
+	src: url("../fonts/JosefinSans-Bold.woff") format('woff');
+	font-style: bold;
+	font-weight: 700;
+}
+
+/*###################### GENERAL ######################*/
+
+* {
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+}
+/*------------ INPUT ------------*/
+input[type="text"] {
+	font: 400 12px/0px 'Josefin Regular';
+	color: #494C6B;
+	border: none;
+	outline: none;
+}
+::placeholder {
+	color: #9495A5;
+}
+/*------------ CONTAINERS ------------*/
+.whiteContainer {
+	width: 327px;
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0px 20px 0px 20px;
+	background-color: white;
+}
+.single-cont {
+	border-radius: 5px;
+}
+.task {
+	border-bottom: solid 1px #E3E4F1;
+}
+/*------------ TEXT ------------*/
+.todoText {
+	width: 230px;
+	font: 400 12px/0px 'Josefin Regular';
+	margin: 0px 13px 0px 0px;
+}
+.unCompleted {
+	color: #494C6B;
+}
+.completed {
+	text-decoration: line-through;
+	color: #D1D2DA;
+}
+.bottom-text {
+	font: 400 14px/0px 'Josefin Regular';
+	color: #9495A5;
+	text-align: center;
+	margin-top: 40px;
+}
+/*------------ BUTTONS ------------*/
+button:hover {
+	cursor: pointer;
+}
+.state-bt {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 10px;
+	margin-right: 12px;
+	outline: none;
+}
+.unFinished-bt {
+	border: solid 1px #979797;
+}
+.finished-bt {
+	border: none;
+	background: url("../images/icon-check.svg") center/8px no-repeat, linear-gradient(-45deg, #C058F3, #55DDFF);
+}
+.delete-bt {
+	width: 12px;
+	height: 12px;
+	background: url("../images/icon-cross.svg") center/12px no-repeat;
+	border: none;
+}
+.clear-bt {
+	font: 400 12px/0px 'Josefin Regular';
+	color: #9495A5;
+	background-color: transparent;
+	border: none;
+}
+.bt-select {
+	font: 700 12px/0px 'Josefin Bold';
+	color: #9495A5;
+	background-color: transparent;
+	border: none;
+}
+/*###################### HEADER ######################*/
+header {
+	width: 100vw;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url("../images/bg-mobile-light.jpg") center/100vw no-repeat;
+}
+#title {
+	width: 325px;
+	height: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 48px auto 0px;
+	color: white;
+}
+h1 {
+	margin: 0px;
+	padding: 0%;
+	font: 700 25px/0px 'Josefin Bold';
+	letter-spacing: 10px;
+}
+#changeBg-bt {
+	width: 20px;
+	height: 20px;
+	background: transparent url("../images/icon-moon.svg") center/20px no-repeat;
+	border: none;
+}
+#newTodo {
+	margin-top: 40px;
+}
+/*###################### MAIN ######################*/
+main {
+	width: 100vw;
+	height: 100vh;
+	background-color: #F2F2F2;
+}
+#main-container {
+	width: 327px;
+	position: absolute;
+	z-index: 1;
+	top: 172px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#todoList {
+	overflow: hidden;
+	box-shadow: 0px 35px 50px -15px hsla(237, 19.6%, 80%, 0.5);
+	border-radius: 5px;
+}
+#info-bar {
+	margin: 0px;
+	font: 400 12px/0px 'Josefin Regular';
+	color: #9495A5;
+	justify-content: space-between !important;
+}
+menu {
+	justify-content: center !important;
+	margin: 16px 0px 0px;
+	box-shadow: 0px 35px 50px -15px hsla(237, 19.6%, 80%, 0.5);
+	gap: 18px;
+}
