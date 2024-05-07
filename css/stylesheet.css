@@ -107,9 +107,16 @@ button:hover {
 }
 .bt-select {
 	font: 700 12px/0px 'Josefin Bold';
-	color: #9495A5;
 	background-color: transparent;
 	border: none;
+}
+
+.select-active{
+	color: #3A7CFD;
+}
+
+.select-inactive{
+	color: #9495A5;
 }
 /*###################### HEADER ######################*/
 header {
