@@ -105,17 +105,17 @@ button:hover {
 	background-color: transparent;
 	border: none;
 }
-.bt-select {
+.bt-filter {
 	font: 700 12px/0px 'Josefin Bold';
 	background-color: transparent;
 	border: none;
 }
 
-.select-active{
+.filter-active{
 	color: #3A7CFD;
 }
 
-.select-inactive{
+.filter-inactive{
 	color: #9495A5;
 }
 /*###################### HEADER ######################*/
