@@ -136,6 +136,15 @@ header {
 	align-items: center;
 	background: url("../images/bg-mobile-light.jpg") center/100vw no-repeat;
 }
+
+.head-light-mode{
+	background: url("../images/bg-mobile-light.jpg") center/100vw no-repeat;
+}
+
+.head-dark-mode{
+	background: url("../images/bg-mobile-light.jpg") center/100vw no-repeat;
+}
+
 #title {
 	width: 325px;
 	height: 20px;
