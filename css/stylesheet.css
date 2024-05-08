@@ -152,15 +152,25 @@ h1 {
 	font: 700 25px/0px 'Josefin Bold';
 	letter-spacing: 10px;
 }
-#changeBg-bt {
-	width: 20px;
-	height: 20px;
-	background: transparent url("../images/icon-moon.svg") center/20px no-repeat;
-	border: none;
-}
+
 #newTodo {
 	margin-top: 40px;
 }
+
+#changeBg-bt {
+	width: 20px;
+	height: 20px;
+	border: none;
+}
+
+.moonBg{
+	background: transparent url("../images/icon-moon.svg") center/20px no-repeat;
+}
+
+.sunBg{
+	background: transparent url("../images/icon-sun.svg") center/20px no-repeat;
+}
+
 /*###################### MAIN ######################*/
 main {
 	width: 100vw;
