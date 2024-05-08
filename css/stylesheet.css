@@ -186,7 +186,7 @@ main {
 	height: 100vh;
 	background-color: #F2F2F2;
 }
-#main-container {
+#main-cont {
 	width: 327px;
 	position: absolute;
 	z-index: 1;
